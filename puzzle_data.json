@@ -13,7 +13,7 @@
         "Line 3: Function call error",
         "No syntax error"
       ],
-      "explanation": "The code snippet is syntactically correct Python. It defines a function, and then calls it.",
+
       "difficulty": "easy"
     },
     {
@@ -29,7 +29,7 @@
         "Line 3: Extra indentation",
         "No error"
       ],
-      "explanation": "In Python, code blocks within loops (and functions, if/else statements) must be consistently indented. Line 2 is not indented, and Line 3 has an extra indentation.",
+
       "difficulty": "medium"
     },
     {
@@ -39,7 +39,7 @@
       "description": "What is the decimal equivalent of the binary number `1011`?",
       "correct_answer": "11",
       "options": ["9", "10", "11", "12"],
-      "explanation": "To convert binary to decimal: $1*2^3 + 0*2^2 + 1*2^1 + 1*2^0 = 8 + 0 + 2 + 1 = 11$.",
+
       "difficulty": "medium"
     },
     {
@@ -49,7 +49,7 @@
       "description": "What is the next number in the Fibonacci sequence: 0, 1, 1, 2, 3, 5, 8, ?",
       "correct_answer": "13",
       "options": ["10", "11", "12", "13"],
-      "explanation": "In the Fibonacci sequence, each number is the sum of the two preceding ones. $5 + 8 = 13$.",
+
       "difficulty": "easy"
     },
     {
@@ -59,7 +59,7 @@
       "description": "If Input A is TRUE and Input B is FALSE, what is the output of an AND gate?",
       "correct_answer": "FALSE",
       "options": ["TRUE", "FALSE", "Depends on the gate type", "Error"],
-      "explanation": "An AND gate outputs TRUE only if all its inputs are TRUE. Since Input B is FALSE, the output is FALSE.",
+
       "difficulty": "medium"
     },
     {
@@ -69,7 +69,7 @@
       "description": "What is the next number in the sequence: 1, 3, 9, 27, ?",
       "correct_answer": "81",
       "options": ["36", "45", "81", "90"],
-      "explanation": "This is a geometric progression where each term is multiplied by 3. $27 * 3 = 81$.",
+
       "difficulty": "easy"
     },
     {
@@ -85,7 +85,7 @@
         "IndexError: list index out of range",
         "No error"
       ],
-      "explanation": "Python lists are zero-indexed. A list of 3 elements has indices 0, 1, and 2. Trying to access index 3 results in an IndexError.",
+
       "difficulty": "medium"
     }
   ],
@@ -100,7 +100,7 @@
         "Object-Oriented Programming (OOP)",
         "Logic Programming"
       ],
-      "explanation": "Object-Oriented Programming (OOP) is a paradigm based on the concept of 'objects', which can contain data and code.",
+
       "category": "Programming Concepts",
       "difficulty": "medium"
     },
@@ -114,7 +114,7 @@
         "Managing and querying relational databases",
         "Creating artificial intelligence models"
       ],
-      "explanation": "SQL (Structured Query Language) is a domain-specific language used in programming and designed for managing data held in a relational database management system.",
+
       "category": "Databases",
       "difficulty": "easy"
     },
@@ -128,7 +128,7 @@
         "IaaS (Infrastructure as a Service)",
         "FaaS (Function as a Service)"
       ],
-      "explanation": "IaaS provides fundamental computing resources such as virtual machines, networks, and storage over the internet.",
+
       "category": "Cloud Computing",
       "difficulty": "hard"
     },
@@ -137,7 +137,7 @@
       "question": "What does HTTP status code 404 signify?",
       "correct_answer": "Not Found",
       "options": ["OK", "Bad Request", "Unauthorized", "Not Found"],
-      "explanation": "The 404 (Not Found) status code indicates that the server cannot find the requested resource.",
+
       "category": "Web Development",
       "difficulty": "easy"
     },
@@ -146,7 +146,7 @@
       "question": "Which data structure operates on a 'Last-In, First-Out' (LIFO) principle?",
       "correct_answer": "Stack",
       "options": ["Queue", "Array", "Linked List", "Stack"],
-      "explanation": "A stack is a linear data structure that follows the LIFO principle, meaning the last element added is the first one to be removed.",
+
       "category": "Data Structures",
       "difficulty": "medium"
     },
@@ -155,7 +155,7 @@
       "question": "What is the smallest unit of data in a computer?",
       "correct_answer": "Bit",
       "options": ["Byte", "Bit", "Nibble", "Word"],
-      "explanation": "A bit (binary digit) is the smallest unit of data in a computer, representing a 0 or a 1.",
+
       "category": "Computer Fundamentals",
       "difficulty": "easy"
     },
@@ -164,7 +164,7 @@
       "question": "Which of these is a version control system?",
       "correct_answer": "Git",
       "options": ["Docker", "Kubernetes", "Jenkins", "Git"],
-      "explanation": "Git is a distributed version control system for tracking changes in source code during software development.",
+
       "category": "DevOps",
       "difficulty": "medium"
     },
@@ -178,7 +178,7 @@
         "Scalability and flexibility with unstructured data",
         "ACID compliance by default"
       ],
-      "explanation": "NoSQL databases are often preferred for their ability to scale horizontally and handle large volumes of unstructured or semi-structured data with flexible schemas.",
+
       "category": "Databases",
       "difficulty": "hard"
     }
@@ -189,7 +189,7 @@
       "scrambled": "TPYHON",
       "correct_answer": "PYTHON",
       "hint": "Popular programming language with a snake logo.",
-      "explanation": "The unscrambled word is PYTHON, a widely used high-level programming language.",
+
       "category": "Programming Languages"
     },
     {
@@ -197,7 +197,7 @@
       "scrambled": "TAABAEDS",
       "correct_answer": "DATABASE",
       "hint": "Organized collection of structured information.",
-      "explanation": "The unscrambled word is DATABASE, a system for storing and retrieving data.",
+
       "category": "Data Management"
     },
     {
@@ -205,7 +205,7 @@
       "scrambled": "GORHLITMA",
       "correct_answer": "ALGORITHM",
       "hint": "A step-by-step procedure for solving a problem.",
-      "explanation": "The unscrambled word is ALGORITHM, a set of instructions to accomplish a task.",
+
       "category": "Computer Science"
     },
     {
@@ -213,7 +213,7 @@
       "scrambled": "EEAHCMINNLRG",
       "correct_answer": "MACHINELEARNING",
       "hint": "A field of AI that enables systems to learn from data.",
-      "explanation": "The unscrambled word is MACHINELEARNING, a subset of AI focused on training models from data.",
+
       "category": "Artificial Intelligence"
     },
     {
@@ -221,7 +221,7 @@
       "scrambled": "KLOIANDHCBC",
       "correct_answer": "BLOCKCHAIN",
       "hint": "Decentralized, distributed ledger technology.",
-      "explanation": "The unscrambled word is BLOCKCHAIN, the technology behind cryptocurrencies like Bitcoin.",
+
       "category": "Emerging Tech"
     },
     {
@@ -229,7 +229,7 @@
       "scrambled": "WEEBRV",
       "correct_answer": "WEBVIEW",
       "hint": "A component that displays web content within an app.",
-      "explanation": "The unscrambled word is WEBVIEW, often used in mobile app development to embed web pages.",
+
       "category": "Web Development"
     },
     {
@@ -237,7 +237,7 @@
       "scrambled": "YCRPTGOHARYP",
       "correct_answer": "CRYPTOGRAPHY",
       "hint": "The practice and study of secure communication.",
-      "explanation": "The unscrambled word is CRYPTOGRAPHY, essential for data security and privacy.",
+
       "category": "Cybersecurity"
     }
   ],
@@ -248,7 +248,7 @@
       "description": "Arrange the code blocks to create a function that prints 'Hello World'.",
       "code_blocks": ["def hello():", "    print('Hello World')", "hello()"],
       "correct_order": [0, 1, 2],
-      "explanation": "The correct order is to define the function, then indent and add the print statement, and finally call the function.",
+
       "difficulty": "easy"
     },
     {
@@ -257,7 +257,7 @@
       "description": "Arrange the code blocks to create a proper for loop that prints numbers 1 to 5.",
       "code_blocks": ["for i in range(1, 6):", "    print(i)"],
       "correct_order": [0, 1],
-      "explanation": "The `for` loop header comes first, followed by the indented statement to be executed in each iteration.",
+
       "difficulty": "medium"
     },
     {
@@ -272,7 +272,7 @@
         "    print('Non-positive')"
       ],
       "correct_order": [0, 1, 2, 3, 4],
-      "explanation": "The variable is defined, then the `if` condition, followed by its indented block. The `else` keyword comes next, followed by its indented block.",
+
       "difficulty": "medium"
     },
     {
@@ -291,7 +291,7 @@
         "</html>"
       ],
       "correct_order": [0, 1, 2, 3, 4, 5, 6, 7, 8],
-      "explanation": "The standard HTML document structure starts with `<!DOCTYPE html>`, followed by `<html>`, then `<head>` (for metadata like title) and `<body>` (for visible content).",
+
       "difficulty": "easy"
     },
     {
@@ -305,7 +305,7 @@
         "}"
       ],
       "correct_order": [0, 1, 2, 3],
-      "explanation": "First, declare the array. Then, set up a `for` loop to iterate from index 0 to `length - 1`, and inside the loop, log each element.",
+
       "difficulty": "medium"
     }
   ]
