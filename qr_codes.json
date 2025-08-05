@@ -1,0 +1,32 @@
+{
+  "challenge_sets": [
+    {
+      "qr_id": "QR001",
+      "challenge_set": "beginner",
+      "difficulty": "Easy",
+      "estimated_time": "3-5 minutes",
+      "url": "https://srm-codebreaker.streamlit.app/?set=beginner&qr=QR001"
+    },
+    {
+      "qr_id": "QR002",
+      "challenge_set": "intermediate",
+      "difficulty": "Medium",
+      "estimated_time": "5-8 minutes",
+      "url": "https://srm-codebreaker.streamlit.app/?set=intermediate&qr=QR002"
+    },
+    {
+      "qr_id": "QR003",
+      "challenge_set": "advanced",
+      "difficulty": "Hard",
+      "estimated_time": "8-12 minutes",
+      "url": "https://srm-codebreaker.streamlit.app/?set=advanced&qr=QR003"
+    },
+    {
+      "qr_id": "QR004",
+      "challenge_set": "speed_run",
+      "difficulty": "Mixed",
+      "estimated_time": "2-3 minutes",
+      "url": "https://srm-codebreaker.streamlit.app/?set=speed_run&qr=QR004"
+    }
+  ]
+}

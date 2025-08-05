@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Codebreaker Challenge - SRM Project Club</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Welcome Screen -->
+      <div id="welcome-screen" class="screen active">
+        <div class="header">
+          <h1 class="club-title">🚀 SRM Ramapuram Project Club</h1>
+          <h2 class="challenge-title">Codebreaker Challenge</h2>
+          <p class="challenge-subtitle">
+            Test your coding skills through interactive puzzles and earn digital
+            badges!
+          </p>
+        </div>
+
+        <div class="difficulty-selection">
+          <h3>Choose Your Challenge Level</h3>
+          <div class="difficulty-cards">
+            <div class="difficulty-card" data-level="easy">
+              <div class="difficulty-icon">🌟</div>
+              <h4>Beginner</h4>
+              <p>Perfect for coding newcomers</p>
+            </div>
+            <div class="difficulty-card" data-level="medium">
+              <div class="difficulty-icon">⚡</div>
+              <h4>Intermediate</h4>
+              <p>For experienced coders</p>
+            </div>
+            <div class="difficulty-card" data-level="hard">
+              <div class="difficulty-icon">🔥</div>
+              <h4>Expert</h4>
+              <p>Ultimate coding challenge</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="qr-section">
+          <h3>Or Scan QR Code</h3>
+          <div class="qr-codes">
+            <div class="qr-code" data-level="easy">
+              <div class="qr-placeholder">📱 Easy QR</div>
+            </div>
+            <div class="qr-code" data-level="medium">
+              <div class="qr-placeholder">📱 Medium QR</div>
+            </div>
+            <div class="qr-code" data-level="hard">
+              <div class="qr-placeholder">📱 Hard QR</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="leaderboard-preview">
+          <h3>🏆 Today's Top Performers</h3>
+          <div id="mini-leaderboard">
+            <div class="leader-entry">
+              <span class="rank">1st</span>
+              <span class="name">Anonymous</span>
+              <span class="time">45s</span>
+            </div>
+            <div class="leader-entry">
+              <span class="rank">2nd</span>
+              <span class="name">Anonymous</span>
+              <span class="time">52s</span>
+            </div>
+            <div class="leader-entry">
+              <span class="rank">3rd</span>
+              <span class="name">Anonymous</span>
+              <span class="time">58s</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- User Registration -->
+      <div id="registration-screen" class="screen">
+        <div class="registration-form">
+          <h2>Ready to Start? 🎯</h2>
+          <p>Enter your name to begin the challenge!</p>
+          <div class="form-group">
+            <input
+              type="text"
+              id="player-name"
+              class="form-control"
+              placeholder="Enter your name"
+              maxlength="20"
+            />
+          </div>
+          <button
+            id="start-challenge-btn"
+            class="btn btn--primary btn--lg btn--full-width"
+          >
+            Start Challenge
+          </button>
+        </div>
+      </div>
+
+      <!-- Challenge Screen -->
+      <div id="challenge-screen" class="screen">
+        <div class="challenge-header">
+          <div class="progress-bar">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <div class="challenge-info">
+            <div class="stage-indicator">
+              <span id="current-stage">Stage 1</span> of 3
+            </div>
+            <div class="timer">⏱️ <span id="timer-display">00:00</span></div>
+          </div>
+        </div>
+
+        <div class="challenge-content">
+          <div id="stage-1" class="challenge-stage active">
+            <h3 id="puzzle-title">Find the Bug</h3>
+            <p id="puzzle-description">
+              Look at this code snippet and identify the syntax error
+            </p>
+            <div id="code-display" class="code-block"></div>
+            <div id="puzzle-options" class="options-grid"></div>
+          </div>
+
+          <div id="stage-2" class="challenge-stage">
+            <h3>Tech Trivia 🧠</h3>
+            <div id="trivia-question" class="trivia-content">
+              <p id="trivia-text"></p>
+              <div id="trivia-options" class="options-grid"></div>
+            </div>
+          </div>
+
+          <div id="stage-3" class="challenge-stage">
+            <h3>Final Challenge 🏆</h3>
+            <div class="final-challenge">
+              <div class="word-scramble">
+                <h4>Word Scramble</h4>
+                <p>Unscramble this tech term:</p>
+                <div id="scrambled-word" class="scrambled-display"></div>
+                <input
+                  type="text"
+                  id="word-answer"
+                  class="form-control"
+                  placeholder="Your answer"
+                />
+                <p id="word-hint" class="hint"></p>
+              </div>
+
+              <div class="code-arrange">
+                <h4>Code Arrangement</h4>
+                <p id="code-description">
+                  Arrange the code blocks in correct order:
+                </p>
+                <div id="code-blocks" class="code-blocks-container"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="challenge-actions">
+          <button id="hint-btn" class="btn btn--outline">💡 Hint</button>
+          <button id="submit-answer-btn" class="btn btn--primary">
+            Submit Answer
+          </button>
+        </div>
+      </div>
+
+      <!-- Results Screen -->
+      <div id="results-screen" class="screen">
+        <div class="results-content">
+          <div class="congratulations">
+            <div class="celebration">🎉</div>
+            <h2>Congratulations, <span id="winner-name">Codebreaker</span>!</h2>
+            <p>You've completed all challenges!</p>
+          </div>
+
+          <div class="performance-stats">
+            <div class="stat">
+              <div class="stat-value" id="completion-time">--</div>
+              <div class="stat-label">Completion Time</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value" id="accuracy-score">--%</div>
+              <div class="stat-label">Accuracy</div>
+            </div>
+            <div class="stat">
+              <div class="stat-value" id="hints-used">--</div>
+              <div class="stat-label">Hints Used</div>
+            </div>
+          </div>
+
+          <div class="earned-badges">
+            <h3>🏅 Badges Earned</h3>
+            <div id="badges-container" class="badges-grid"></div>
+          </div>
+
+          <div class="digital-certificate">
+            <div class="certificate">
+              <div class="certificate-header">
+                <h3>🏆 Digital Certificate</h3>
+                <p>SRM Ramapuram Project Club</p>
+              </div>
+              <div class="certificate-body">
+                <p>This certifies that</p>
+                <h4 id="certificate-name">Name</h4>
+                <p>has successfully completed the</p>
+                <h5>Codebreaker Challenge</h5>
+                <div id="primary-badge" class="primary-badge"></div>
+              </div>
+              <div class="certificate-footer">
+                <p>Date: <span id="certificate-date"></span></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-sharing">
+            <h3>📱 Share Your Achievement</h3>
+            <div class="share-buttons">
+              <button id="share-instagram" class="btn btn--secondary share-btn">
+                📷 Instagram
+              </button>
+              <button id="share-linkedin" class="btn btn--secondary share-btn">
+                💼 LinkedIn
+              </button>
+              <button id="share-twitter" class="btn btn--secondary share-btn">
+                🐦 Twitter
+              </button>
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button id="view-leaderboard-btn" class="btn btn--outline">
+              🏆 View Leaderboard
+            </button>
+            <button id="play-again-btn" class="btn btn--primary">
+              🎮 Play Again
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leaderboard Screen -->
+      <div id="leaderboard-screen" class="screen">
+        <div class="leaderboard-content">
+          <h2>🏆 Leaderboard</h2>
+          <p>Today's top performers</p>
+
+          <div id="full-leaderboard" class="leaderboard-list">
+            <!-- Leaderboard entries will be populated by JavaScript -->
+          </div>
+
+          <div class="leaderboard-actions">
+            <button id="back-to-results-btn" class="btn btn--outline">
+              ← Back to Results
+            </button>
+            <button id="new-challenge-btn" class="btn btn--primary">
+              🎮 New Challenge
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

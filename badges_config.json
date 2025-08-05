@@ -1,0 +1,70 @@
+{
+  "speed_coder": {
+    "name": "Speed Coder",
+    "description": "Completed all challenges in under 60 seconds",
+    "icon": "\u26a1",
+    "criteria": {
+      "time_limit": 60,
+      "completion_rate": 100
+    }
+  },
+  "tech_guru": {
+    "name": "Tech Guru",
+    "description": "Answered all tech trivia questions correctly",
+    "icon": "\ud83e\udde0",
+    "criteria": {
+      "trivia_accuracy": 100
+    }
+  },
+  "puzzle_master": {
+    "name": "Puzzle Master",
+    "description": "Solved all logic puzzles without hints",
+    "icon": "\ud83e\udde9",
+    "criteria": {
+      "puzzle_accuracy": 100,
+      "hints_used": 0
+    }
+  },
+  "code_ninja": {
+    "name": "Code Ninja",
+    "description": "Perfect completion of all drag-drop challenges",
+    "icon": "\ud83e\udd77",
+    "criteria": {
+      "code_accuracy": 100
+    }
+  },
+  "word_wizard": {
+    "name": "Word Wizard",
+    "description": "Unscrambled all words correctly",
+    "icon": "\ud83d\udcdd",
+    "criteria": {
+      "word_accuracy": 100
+    }
+  },
+  "bronze_challenger": {
+    "name": "Bronze Challenger",
+    "description": "Completed the basic challenge",
+    "icon": "\ud83e\udd49",
+    "criteria": {
+      "completion_rate": 50
+    }
+  },
+  "silver_achiever": {
+    "name": "Silver Achiever",
+    "description": "Completed challenge with good performance",
+    "icon": "\ud83e\udd48",
+    "criteria": {
+      "completion_rate": 75,
+      "accuracy": 75
+    }
+  },
+  "gold_champion": {
+    "name": "Gold Champion",
+    "description": "Excellent performance across all challenges",
+    "icon": "\ud83e\udd47",
+    "criteria": {
+      "completion_rate": 90,
+      "accuracy": 90
+    }
+  }
+}

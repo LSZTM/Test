@@ -1,0 +1,28 @@
+{
+  "instagram": {
+    "template": "I conquered the Codebreaker challenge at SRM Ramapuram Project Club! \ud83d\ude80 Got the {badge_name} badge! #SRMProjectClub #CampusCoders #TechChallenge",
+    "hashtags": [
+      "#SRMProjectClub",
+      "#CampusCoders",
+      "#TechChallenge",
+      "#CodebreakersChallenge"
+    ]
+  },
+  "linkedin": {
+    "template": "Just completed the Codebreaker challenge at SRM Ramapuram Project Club and earned the {badge_name} badge! Excited to be part of this amazing tech community. #SRMProjectClub #TechSkills #StudentAchievement",
+    "hashtags": [
+      "#SRMProjectClub",
+      "#TechSkills",
+      "#StudentAchievement",
+      "#ProgrammingChallenge"
+    ]
+  },
+  "twitter": {
+    "template": "\ud83c\udf89 Conquered the Codebreaker challenge @SRMProjectClub! Earned {badge_name} badge in {completion_time}s! #SRMProjectClub #CampusCoders",
+    "hashtags": [
+      "#SRMProjectClub",
+      "#CampusCoders",
+      "#TechChallenge"
+    ]
+  }
+}

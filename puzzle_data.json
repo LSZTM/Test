@@ -1,0 +1,187 @@
+{
+  "logic_puzzles": [
+    {
+      "id": 1,
+      "type": "visual_bug",
+      "title": "Find the Bug",
+      "description": "Look at this code snippet and identify the syntax error",
+      "code": "for i in range(10)\n    print(i)",
+      "correct_answer": "Missing colon after range(10)",
+      "options": [
+        "Missing colon",
+        "Wrong indentation",
+        "Missing parentheses",
+        "Variable error"
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "type": "logic_grid",
+      "title": "Binary Logic",
+      "description": "What is the binary representation of 15?",
+      "correct_answer": "1111",
+      "options": [
+        "1010",
+        "1111",
+        "1100",
+        "1001"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 3,
+      "type": "pattern_recognition",
+      "title": "Sequence Pattern",
+      "description": "Complete the sequence: 2, 4, 8, 16, ?",
+      "correct_answer": "32",
+      "options": [
+        "24",
+        "32",
+        "28",
+        "30"
+      ],
+      "difficulty": "easy"
+    }
+  ],
+  "tech_trivia": [
+    {
+      "id": 1,
+      "question": "Which programming language is known as the 'mother of all languages'?",
+      "correct_answer": "C",
+      "options": [
+        "Python",
+        "Java",
+        "C",
+        "Assembly"
+      ],
+      "category": "Programming Languages",
+      "difficulty": "medium"
+    },
+    {
+      "id": 2,
+      "question": "What does API stand for?",
+      "correct_answer": "Application Programming Interface",
+      "options": [
+        "Advanced Programming Interface",
+        "Application Programming Interface",
+        "Automated Program Integration",
+        "Applied Programming Instructions"
+      ],
+      "category": "Software Development",
+      "difficulty": "easy"
+    },
+    {
+      "id": 3,
+      "question": "Which company developed the React JavaScript library?",
+      "correct_answer": "Facebook",
+      "options": [
+        "Google",
+        "Microsoft",
+        "Facebook",
+        "Twitter"
+      ],
+      "category": "Web Development",
+      "difficulty": "easy"
+    },
+    {
+      "id": 4,
+      "question": "What is the time complexity of binary search?",
+      "correct_answer": "O(log n)",
+      "options": [
+        "O(n)",
+        "O(log n)",
+        "O(n\u00b2)",
+        "O(1)"
+      ],
+      "category": "Algorithms",
+      "difficulty": "medium"
+    },
+    {
+      "id": 5,
+      "question": "Which protocol is used for secure web communication?",
+      "correct_answer": "HTTPS",
+      "options": [
+        "HTTP",
+        "HTTPS",
+        "FTP",
+        "SMTP"
+      ],
+      "category": "Networking",
+      "difficulty": "easy"
+    }
+  ],
+  "word_scrambles": [
+    {
+      "id": 1,
+      "scrambled": "TPYHON",
+      "correct_answer": "PYTHON",
+      "hint": "Popular programming language with snake logo",
+      "category": "Programming Languages"
+    },
+    {
+      "id": 2,
+      "scrambled": "TAABAEDS",
+      "correct_answer": "DATABASE",
+      "hint": "Storage system for organized data",
+      "category": "Data Management"
+    },
+    {
+      "id": 3,
+      "scrambled": "GORHLITMA",
+      "correct_answer": "ALGORITHM",
+      "hint": "Step-by-step problem-solving procedure",
+      "category": "Computer Science"
+    },
+    {
+      "id": 4,
+      "scrambled": "EEAHCMINNLRG",
+      "correct_answer": "MACHINELEARNING",
+      "hint": "AI subset that learns from data",
+      "category": "Artificial Intelligence"
+    },
+    {
+      "id": 5,
+      "scrambled": "KLOIANDHCBC",
+      "correct_answer": "BLOCKCHAIN",
+      "hint": "Decentralized ledger technology",
+      "category": "Emerging Tech"
+    }
+  ],
+  "drag_drop_code": [
+    {
+      "id": 1,
+      "title": "Complete the Python Function",
+      "description": "Arrange the code blocks to create a function that prints 'Hello World'",
+      "code_blocks": [
+        "def hello():",
+        "print('Hello World')",
+        "hello()",
+        "    "
+      ],
+      "correct_order": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "difficulty": "easy"
+    },
+    {
+      "id": 2,
+      "title": "For Loop Structure",
+      "description": "Create a proper for loop that prints numbers 1 to 5",
+      "code_blocks": [
+        "for i in range(1, 6):",
+        "print(i)",
+        "    "
+      ],
+      "correct_order": [
+        0,
+        2,
+        1
+      ],
+      "difficulty": "medium"
+    }
+  ]
+}
