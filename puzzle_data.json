@@ -239,6 +239,81 @@
       "hint": "The practice and study of secure communication.",
 
       "category": "Cybersecurity"
+    },
+    {
+      "id": 8,
+      "type": "visual_bug",
+      "title": "Unreachable Code After Return",
+      "description": "What's the issue with the function defined below?",
+      "code": "1: def multiply(a, b):\n2:     return a * b\n3:     print('This will never run')",
+      "correct_answer": "Line 3: Unreachable code",
+      "options": [
+        "Line 1: Missing type annotations",
+        "Line 2: Incorrect return syntax",
+        "Line 3: Unreachable code",
+        "No error"
+      ],
+      "difficulty": "medium"
+    },
+    {
+      "id": 9,
+      "type": "visual_bug",
+      "title": "Unexpected Indentation in Loop",
+      "description": "Find the logical issue with this loop construct.",
+      "code": "1: for i in range(3):\n2:     print(i)\n3:      print('Looping')",
+      "correct_answer": "Line 3: Inconsistent indentation",
+      "options": [
+        "Line 1: Incorrect range syntax",
+        "Line 2: Extra indentation",
+        "Line 3: Inconsistent indentation",
+        "No error"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 10,
+      "type": "visual_bug",
+      "title": "List Modification While Iterating",
+      "description": "Identify the logical bug in modifying a list during iteration.",
+      "code": "1: items = [1, 2, 3, 4]\n2: for item in items:\n3:     if item % 2 == 0:\n4:         items.remove(item)\n5: print(items)",
+      "correct_answer": "Line 4: Modifying list while iterating",
+      "options": [
+        "Line 2: Incorrect loop syntax",
+        "Line 4: Modifying list while iterating",
+        "Line 5: Should use return instead of print",
+        "No error"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 11,
+      "type": "visual_bug",
+      "title": "Confusing Equality Operator",
+      "description": "Which line contains a logical bug in checking for equality?",
+      "code": "1: x = 10\n2: if x = 10:\n3:     print('Ten')",
+      "correct_answer": "Line 2: Assignment instead of equality check",
+      "options": [
+        "Line 1: x should be a string",
+        "Line 2: Assignment instead of equality check",
+        "Line 3: Missing indentation",
+        "No error"
+      ],
+      "difficulty": "hard"
+    },
+    {
+      "id": 12,
+      "type": "visual_bug",
+      "title": "Mutable Default Argument Trap",
+      "description": "Spot the problem with using a mutable default argument in a function.",
+      "code": "1: def append_item(item, items=[]):\n2:     items.append(item)\n3:     return items\n4: print(append_item(1))\n5: print(append_item(2))",
+      "correct_answer": "Line 1: Mutable default argument",
+      "options": [
+        "Line 2: append is not a valid list method",
+        "Line 3: Should use return items[:] instead",
+        "Line 1: Mutable default argument",
+        "No error"
+      ],
+      "difficulty": "hard"
     }
   ],
   "drag_drop_code": [
@@ -306,6 +381,86 @@
       ],
       "correct_order": [0, 1, 2, 3],
 
+      "difficulty": "medium"
+    },
+    {
+      "id": 6,
+      "title": "Recursive Factorial Function",
+      "description": "Arrange the code blocks to define a recursive factorial function.",
+      "code_blocks": [
+        "def factorial(n):",
+        "    if n == 0:",
+        "        return 1",
+        "    return n * factorial(n - 1)",
+        "print(factorial(5))"
+      ],
+      "correct_order": [0, 1, 2, 3, 4],
+      "difficulty": "medium"
+    },
+    {
+      "id": 7,
+      "title": "Check Prime Number",
+      "description": "Reorder the code to check if a number is prime.",
+      "code_blocks": [
+        "num = 7",
+        "is_prime = True",
+        "for i in range(2, num):",
+        "    if num % i == 0:",
+        "        is_prime = False",
+        "        break",
+        "print(is_prime)"
+      ],
+      "correct_order": [0, 1, 2, 3, 4, 5, 6],
+      "difficulty": "hard"
+    },
+    {
+      "id": 8,
+      "title": "HTML Page with Image",
+      "description": "Arrange the HTML tags to include an image and a heading.",
+      "code_blocks": [
+        "<!DOCTYPE html>",
+        "<html>",
+        "<head>",
+        "  <title>Image Page</title>",
+        "</head>",
+        "<body>",
+        "  <h1>Hello World</h1>",
+        "  <img src='logo.png' alt='Logo'>",
+        "</body>",
+        "</html>"
+      ],
+      "correct_order": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+      "difficulty": "medium"
+    },
+    {
+      "id": 9,
+      "title": "FizzBuzz Implementation",
+      "description": "Reorder the code blocks to complete a FizzBuzz from 1 to 15.",
+      "code_blocks": [
+        "for i in range(1, 16):",
+        "    if i % 3 == 0 and i % 5 == 0:",
+        "        print('FizzBuzz')",
+        "    elif i % 3 == 0:",
+        "        print('Fizz')",
+        "    elif i % 5 == 0:",
+        "        print('Buzz')",
+        "    else:",
+        "        print(i)"
+      ],
+      "correct_order": [0, 1, 2, 3, 4, 5, 6, 7],
+      "difficulty": "hard"
+    },
+    {
+      "id": 10,
+      "title": "JavaScript Function Declaration",
+      "description": "Reorder the code to define and call a JavaScript function.",
+      "code_blocks": [
+        "function greet(name) {",
+        "  return 'Hello, ' + name;",
+        "}",
+        "console.log(greet('Alice'));"
+      ],
+      "correct_order": [0, 1, 2, 3],
       "difficulty": "medium"
     }
   ]
