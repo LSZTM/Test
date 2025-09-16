@@ -1,5 +1,5 @@
-// Codebreaker Challenge Application
-class CodebreakerChallenge {
+// campuscoders Challenge Application
+class campuscodersChallenge {
     constructor() {
         this.gameState = {
             currentScreen: 'welcome',
@@ -208,13 +208,13 @@ class CodebreakerChallenge {
 
         this.socialSharing = {
             instagram: {
-                template: "I conquered the Codebreaker challenge at SRM Ramapuram Project Club! 🚀 Got the {badge_name} badge! #SRMProjectClub #CampusCoders #TechChallenge"
+                template: "I conquered the campuscoders challenge at SRM Ramapuram Project Club! 🚀 Got the {badge_name} badge! #SRMProjectClub #CampusCoders #TechChallenge"
             },
             linkedin: {
-                template: "Just completed the Codebreaker challenge at SRM Ramapuram Project Club and earned the {badge_name} badge! Excited to be part of this amazing tech community. #SRMProjectClub #TechSkills #StudentAchievement"
+                template: "Just completed the campuscoders challenge at SRM Ramapuram Project Club and earned the {badge_name} badge! Excited to be part of this amazing tech community. #SRMProjectClub #TechSkills #StudentAchievement"
             },
             twitter: {
-                template: "🎉 Conquered the Codebreaker challenge @SRMProjectClub! Earned {badge_name} badge in {completion_time}s! #SRMProjectClub #CampusCoders"
+                template: "🎉 Conquered the campuscoders challenge @SRMProjectClub! Earned {badge_name} badge in {completion_time}s! #SRMProjectClub #CampusCoders"
             }
         };
 
@@ -1073,7 +1073,7 @@ class CodebreakerChallenge {
 
     loadLeaderboard() {
         try {
-            const saved = localStorage.getItem('codebreaker-leaderboard');
+            const saved = localStorage.getItem('campuscoders-leaderboard');
             return saved ? JSON.parse(saved) : [];
         } catch (e) {
             return [];
@@ -1082,7 +1082,7 @@ class CodebreakerChallenge {
 
     saveLeaderboard() {
         try {
-            localStorage.setItem('codebreaker-leaderboard', JSON.stringify(this.gameState.leaderboard));
+            localStorage.setItem('campuscoders-leaderboard', JSON.stringify(this.gameState.leaderboard));
         } catch (e) {
             // LocalStorage not available, continue without saving
             console.log('LocalStorage not available');
@@ -1104,6 +1104,6 @@ class CodebreakerChallenge {
 
 // Initialize the application when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM loaded, initializing Codebreaker Challenge...');
-    new CodebreakerChallenge();
+    console.log('DOM loaded, initializing campuscoders Challenge...');
+    new campuscodersChallenge();
 });
